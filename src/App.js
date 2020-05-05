@@ -1,14 +1,17 @@
 import React from 'react';
-import Header from './common/header/header';
+import Header from './common/header';
 import { IndexStyle } from './style';
-import {IconfontStyle} from './static/iconfont/iconfont'
+import { IconfontStyle } from './static/iconfont/iconfont'
+import { Provider } from 'react-redux';
+import store from './store';
+
 function App() {
   return (
-    <div>
+    <Provider store={store}>
       <IndexStyle />
-      <IconfontStyle/>
-      <Header/>
-    </div>
+      <IconfontStyle />
+      <Header />
+    </Provider>
   );
 }
 

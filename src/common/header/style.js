@@ -61,25 +61,25 @@ export const NavSearch = styled.input.attrs({
     &.focused{
         width: 240px;
     }
+    &.slide-enter {
+        width: 160px;
+        transition: all .2s ease-out;
+    }
+    &.slide-enter-active {
+        width: 240px;
+    }
+    &.slide-exit{
+        transition: all .2s ease-out;
+    }
+    &.slide-exit-active{
+        width: 160px;
+    }
 `;
 
 export const SearchWrapper = styled.div`
     float: left;
     position: relative;
-    .slide-enter {
-        width: 160px;
-        transition: all .2s ease-out;
-    }
-    .slide-enter-active {
-        width: 240px;
-    }
-    .slide-exit{
-        transition: all .2s ease-out;
-    }
-    .slide-exit-active{
-        width: 160px;
-    }
-    .iconfont {
+    .zoom {
         right: 5px;
         bottom: 5px;
         width: 30px;
@@ -92,6 +92,54 @@ export const SearchWrapper = styled.div`
             color: #fff;
         }
     }
+`;
+
+export const SearchInfo = styled.div`
+    position: absolute;
+    left: 0;
+    top: 56px;
+    width: 240px;
+    padding: 0 20px;
+    box-shadow: 0 0 8px rgba(0,0,0,.2);
+`;
+
+export const SearchInfoTitle = styled.div`
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 20px;
+    font-size:14px;
+    color: #969696;
+`;
+
+export const SearchInfoSwitch = styled.span`
+    float: right;
+    font-size: 13px;
+    cursor: pointer;
+    .spin {
+        display: block;
+        font-size: 13px;
+        float: left;
+        margin-right: 2px;
+        transition: all .2s ease-in;
+        transform-origin: center center;
+    }
+`;
+
+export const SearchInfoList = styled.div`
+    overflow: hidden;
+`;
+
+export const SearchInfoItem = styled.a`
+    line-height: 20px;
+    float: left;
+    padding: 0 5px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    color: #787878;
+    display: block;
+    border-radius: 3px;
+    margin-right: 8px;
+    margin-bottom: 16px;
 `;
 
 export const Addition = styled.div`
