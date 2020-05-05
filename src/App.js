@@ -1,10 +1,13 @@
 import React from 'react';
-import { IndexStyle } from './index-style';
+import Header from './common/header/header';
+import { IndexStyle } from './style';
+import {IconfontStyle} from './static/iconfont/iconfont'
 function App() {
   return (
     <div>
       <IndexStyle />
-      Hello World !
+      <IconfontStyle/>
+      <Header/>
     </div>
   );
 }
