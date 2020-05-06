@@ -30,7 +30,7 @@ export const changePage = (page) =>({
 
 export const getSearchInfoList = () => {
     return (dispatch) => {
-        axios.get('/api/headerList.json').then((res) => {
+        axios.get('api/headerList.json').then((res) => {
             dispatch(changeSearchInfoList(res.data.data));
         }).catch((e) => {
             console.log('error ...');
