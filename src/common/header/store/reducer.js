@@ -5,7 +5,7 @@ const defaultState = fromJS({
     mouseIn: false,
     searchInfoList: [],
     page: 1,
-    totalPage: 1
+    totalPage: 1,
 });
 
 export default (preState = defaultState, action) => {
